@@ -35,7 +35,7 @@ $getListBook = $bookController->getListBook();
             foreach ($getListBook as $index => $value) {
             ?>
                 <tr>
-                    <th scope="row"><?php echo $index ?></th>
+                    <th scope="row"><?php echo $index + 1 ?></th>
                     <td><?php echo $value->getBookName() ?></td>
                     <td><?php echo $value->getAuthor() ?></td>
                     <td><?php echo $value->getPublish() ?></td>
